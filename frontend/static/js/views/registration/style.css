@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+input,button{
+    width: 100%;
+    height: 35px;
+    margin: 10px 0;
+    border: 1px solid #dbdbdb;
+    background-color: #fafafa;
+    border-radius: 4px;
+    padding: 5px 10px;
+    display: block;
+    outline:none;
+}
+
+input[type='submit'],button{
+    background-color: #b2dffc;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+input[type='submit']:hover{
+    background-color: #0095f6;
+}
+
+button{
+    background-color: #0095f6;
+}
+
+.main-login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+.main-authentication-block{
+    width: 350px;
+}
+
+.main-authentication-block div{
+    margin: 7px 0;
+    text-align: center;
+}
+
+.main-authentication-block--form, .main-authentication-block--register{
+    padding: 0 35px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+}
+
+.main-authentication-block--form > div{
+    margin: 25px 0;
+}
+
+.main-authentication-block--form_logo{
+    width: 100%;
+}
+
+.main-authentication-block--form_logo img{
+    width: 100%;
+}
+
+.main-authentication-block--form_fields{
+    width: 100%;
+}
+
+.main-authentication-block--form_alternative{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.main-authentication-block--form_alternative__line{
+    width: 100%;
+    height: 2px;
+    background-color: #dbdbdb;
+    line-height: 0px;
+    
+}
+
+.main-authentication-block--form_alternative__line span{
+    padding: 10px;
+    background: #fff;
+    color: #8e8e8e;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.main-authentication-block--form_facebook a{
+    color: #385185;
+    text-decoration: none;
+    color: #385185;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.main-authentication-block--form_password-recovery a{
+    text-decoration: none;
+    color: #666;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.main-authentication-block--register{
+    font-size: 13px;
+    padding: 20px 0;
+}
+
+.main-authentication-block--register a{
+    text-decoration: none;
+    color: #5295f6;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.main-authentication-block--form_description{
+    color: #8e8e8e;
+    font-weight: 500;
+}
+
+.main-authentication-block--form_attention{
+    color: #8e8e8e;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #fafafa;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 54px;
+    border-bottom: 1px solid #dbdbdb;
+    background: #fff;
+    z-index: 888;
+}
+
+.main-header{
+    display: grid;
+    grid-template-columns: 1fr 215px 1fr;
+    margin: 0 auto;
+    width: 975px;
+    height: 54px;
+    padding: 0 20px;
+    line-height: 54px;
+}
+
+.main-header_logo{
+    text-align: start;
+}
+
+.main-header_search{
+    text-align: center;
+}
+
+.main-header_nav{
+    text-align: end;
+}
+
+.main-header_logo img{
+    height: 40px;
+    vertical-align: middle;
+}
+
+.main-header_nav{
+    position: relative;
+    height: 54px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    line-height: 54px;
+}
+
+.main-header_nav .nav-item{
+    margin-left: 20px;
+    width: 22px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.main-header_nav__profile{
+    margin-left: 20px;
+    height: 48px;
+    width: 48px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.main-header_nav__profile img{
+    width: 100%;
+}
+
+.main-header_nav__profile__menu{
+    position: absolute;
+    top: 58px;
+    right: 0;
+    width: 200px;
+    line-height: 35px;
+    background: #fff;
+    box-shadow: 0 0 5px 1px rgba(var(--jb7,0,0,0),.0975);
+    text-align: start;
+}
+
+.main-header_nav__profile__menu ul{
+    list-style-type: none;
+}
+
+.menu-item{
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    cursor: pointer;
+    color: #7f7f7f;
+}
+
+.menu-item:hover{
+    background: #fafafa;
+    color: black;
+}
+
+.main-header_search input{
+    padding: 7px 20px;
+    width: 215px;
+    height: 28px;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+.hide{
+    display: none;
+}
